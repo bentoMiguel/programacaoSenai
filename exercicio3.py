@@ -7,12 +7,12 @@ total = 0
 for i in range(len(valores)):
     total += valores[i]
 
-maiorValor = 0
+maiorValor = -999999
 for i in range(len(valores)):
     if valores[i] > maiorValor:
         maiorValor = valores[i]
 
-menorValor = 0
+menorValor = 999999
 for i in range(len(valores)):
     if valores[i] < menorValor:
         menorValor = valores[i]

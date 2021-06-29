@@ -10,7 +10,7 @@ for i in range(len(lista)):
 print(tamanho)
 
 print("maior valor;", end=" ")
-maiorValor = 0
+maiorValor = -999999
 
 for i in range(len(lista)):
     if lista[i] > maiorValor:
@@ -19,7 +19,7 @@ for i in range(len(lista)):
 print(maiorValor)
 
 print("menor valor;", end=" ")
-menorValor = 0
+menorValor = 999999
 
 for i in range(len(lista)):
     if lista[i] < menorValor:
@@ -48,7 +48,7 @@ print(lista)
 print("ordem decrescente;", end="  ")
 for i in range(len(lista)):
     for j in range(len(lista)):
-        if lista[i] < lista[j]:
+        if lista[i] > lista[j]:
             tempVar = lista[i]
             lista[i] = lista[j]
             lista[j] = tempVar
