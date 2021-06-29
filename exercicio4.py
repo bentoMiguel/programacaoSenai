@@ -1,6 +1,6 @@
-def underline(qntd):
-    for i in range(qntd):
+def underline(quantidade):
+    for i in range(quantidade):
         print("_", end="")
 
 
-underline(5)
+underline(7)

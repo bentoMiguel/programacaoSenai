@@ -1,21 +1,56 @@
-L = [5, 7, 2, 9, 4, 1, 3]
+lista = [5, 7, 2, 9, 4, 1, 3]
+print("lista = ", lista, "\n")
 
-print("tamanho da lista;")
-print(len(L), "\n")
+print("tamanho;", end=" ")
+tamanho = 0
 
-print("maior valor da lista;")
-print(max(L), "\n")
+for i in range(len(lista)):
+    tamanho += 1
 
-print("menor valor da lista;")
-print(min(L), "\n")
+print(tamanho)
 
-print("soma de todos os elementos da lista;")
-print(sum(L), "\n")
+print("maior valor;", end=" ")
+maiorValor = 0
 
-print("lista em ordem crescente;")
-L.sort()
-print(L, "\n")
+for i in range(len(lista)):
+    if lista[i] > maiorValor:
+        maiorValor = lista[i]
 
-print("lista em ordem decrescente.")
-L.reverse()
-print(L, "\n")
+print(maiorValor)
+
+print("menor valor;", end=" ")
+menorValor = 0
+
+for i in range(len(lista)):
+    if lista[i] < menorValor:
+        menorValor = lista[i]
+
+print(menorValor)
+
+print("soma de todos os elementos;", end=" ")
+total = 0
+
+for i in range(len(lista)):
+    total += lista[i]
+
+print(total)
+
+print("ordem crescente;", end="  ")
+for i in range(len(lista)):
+    for j in range(len(lista)):
+        if lista[i] < lista[j]:
+            tempVar = lista[i]
+            lista[i] = lista[j]
+            lista[j] = tempVar
+
+print(lista)
+
+print("ordem decrescente;", end="  ")
+for i in range(len(lista)):
+    for j in range(len(lista)):
+        if lista[i] < lista[j]:
+            tempVar = lista[i]
+            lista[i] = lista[j]
+            lista[j] = tempVar
+
+print(lista)
