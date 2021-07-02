@@ -1,8 +1,8 @@
-def enumerar(lista):
-    for i in range(len(lista)):
-        print(i + 1, "-", lista[i])
+def enumerar(array):
+    for i in range(len(array)):
+        print(i + 1, "-", array[i])
 
 
-lista = ["python", "java", "c#"]
+lista = ["java", 2.25, "python", 212]
 
 enumerar(lista)

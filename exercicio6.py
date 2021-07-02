@@ -1,4 +1,10 @@
-def horasParaSegundos(horas):
-    print(horas, "horas representam", horas*60, "minutos!")
+def conversorHoraMin(horas):
+    print(horas, "hora(s) representa(am)", horas*60, "minutos!")
 
-horasParaSegundos(3)
+
+print("===== CONVERSÃO: Horas --> Minutos =====")
+print("aviso: uma hora e meia (1:30) é representada como 1.5 horas")
+
+horas = float(input("\nInforme a hora: "))
+
+conversorHoraMin(horas)

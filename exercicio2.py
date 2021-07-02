@@ -1,14 +1,18 @@
 valores = []
 for i in range(4):
-    valores.append(int(input("informe um número: ")))
+    valores.append(float(input("informe um número: ")))
 
 total = 0
-for i in range(len(valores)):
+i = 0
+while i < len(valores):
     total += valores[i]
+    i += 1
 
 media = total/len(valores)
 
 if media > 1:
-    print("positivo")
+    print("Média maior que 1: \"positivo\"")
 else:
-    print("negativo")
+    print("Média menor ou igual a 1: \"negativo\"")
+
+print("A média é:", media)
