@@ -1,9 +1,10 @@
 # PARTE DE CIMA: /\
 
+tamanhoParteCima = 4
 espacosDoInicio = 4
 espacosDoMeio = 0
 
-for linha in range(4):
+for linha in range(tamanhoParteCima):
     print(" " * espacosDoInicio, "*", end="")
 
     if linha == 0:
@@ -18,14 +19,15 @@ for linha in range(4):
 
 # PARTE DE BAIXO: |_|
 
+tamanhoParteBaixo = 4
 espacosDoInicio = 2
 espacosDoMeio = 5
 
-for linha in range(4):
+for linha in range(tamanhoParteBaixo):
     if linha == 0:
         print("***", " " * espacosDoMeio, "***", sep="")
 
-    elif linha == 3:
+    elif linha == tamanhoParteBaixo - 1:
         print(" " * espacosDoInicio, "*****")
 
     else:
